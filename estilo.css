@@ -1,0 +1,60 @@
+:root {
+    --color-text: black;
+    --background-color: white;
+    --background-color2: #e9e9e9;
+    --color-text2: black;
+    --shadow: #616161;
+}
+
+#darkmodeToggle{
+    display: none;
+}
+
+body {
+    background: var(--background-color);
+    color: var(--color-text);
+}
+
+#menu ul li a {
+    padding: 20px 27px;
+    display: inline-block;
+    color: var(--color-text);
+    text-decoration: none;
+    border-bottom:3px solid var(--background-color);
+}
+
+#darkmodeToggle:checked + .container2 {
+    --color-text: white;
+    --background-color: black;
+    --background-color2:#363636;
+    --color-text2: white;
+    --shadow: white;
+
+    background: var(--background-color);
+    color: var(--color-text);
+}
+
+#darkmodeToggle:checked + .container2 .darkmodeLabel:after {
+    content: ' ON';
+}
+
+.darkmodeLabel {
+    cursor: pointer;
+}
+
+.darkmodeLabel:after {
+    content: ' OFF';
+}
+
+.container2 {
+    width: 100%;
+}
+
+#conteudo2 {
+    width: 840px;
+    margin: center;
+}
+#aulas {
+    text-align: center;
+}
+
